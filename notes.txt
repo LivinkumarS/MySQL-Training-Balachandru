@@ -1,0 +1,70 @@
+What is Database?
+>> It is an organized collection of data that can be esaily accessed, managed and updated.
+
+Types of Database
+-------------------
+Relational DB: (RDBMS) (SQL Database)
+----------------------
+Data stored in Table form. SQL is used to manipulate the data.
+Ex: MySQL, PostgerSQL, Oracle....
+
+Non - Relational DB: (NoSQL Database)
+-------------------
+>> Data Stored as documents. SQL is not needed.
+ex: MongoDB, Cassandra, Redirs.
+
+MySQL:
+-------
+>> Open-source
+>> Large community system
+
+SQL ---> Structured Query Language.
+
+Basic MySQL Syntax:
+--------------------
+>> SQL is case-insensitive.
+>> Every sql query should end with ";"
+
+DataStructure
+----------------
+Database ---> Table ---> data
+
+Datatypes
+-----------
+Numeric Datatypes
+-------------------
+INT ---> whole numbers. Ex: -1,0,12,3,4,5...
+FLOAT ---> decimal numbers. Ex: 3.14,32.3223....
+
+String:
+--------
+CHAR(n)--> Fixed Length String. Ex: CHAR(5)--> should have 5 char
+VARCHAR(n) --> Variable Character Length string. Ex: VARCHAR(5) ---> char length can be lower or equal to 5.
+TEXT--> large text.
+ENUM ---> used to create choices. ("Raj","Babu","Kumar")
+
+Date 
+-----
+DATE ---> only date. format: yyyy-mm-dd
+TIME ---> only time. format: hh:mm:ss.
+DATETIME---> both date and time
+
+Boolean:
+--------
+Boolean ---> 1 or 0
+
+
+Queries:
+---------
+to create a database ---> CREATE DATABASE "DB name"
+to select a DB ---? USE "DB name"
+to create a table ----> CREATE TABLE "TB name"( col details );
+
+
+Basic CRUD Operation: (Data)
+-----------------------------
+CRUD--> Create Read Update Delete.
+
+to add a new data to a table ---> INSERT INTO "tb name" (col details) VALUES (),(),();
+
+Create --> INSERT
