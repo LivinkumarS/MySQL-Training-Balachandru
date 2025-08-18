@@ -54,17 +54,50 @@ Boolean:
 Boolean ---> 1 or 0
 
 
+Constraint
+-----------
+primary key ---> It is just used to idetify each data uniquly
+
+
 Queries:
 ---------
 to create a database ---> CREATE DATABASE "DB name"
 to select a DB ---? USE "DB name"
-to create a table ----> CREATE TABLE "TB name"( col details );
+to create a table ----> CREATE TABLE "TB name"( 
+    col1 Datatype Constraint,
+    col2 Datatype,
+    .
+    .
+    .
+ );
+
+Condition:
+------------
+Operators
+---------
+= --> equal to,
+> --> greater than
+< --> lesser than
+<>, != --> not than
+
+>= ---> Greater or equal
+<= ---> Lesser or equal
+
+
+
 
 
 Basic CRUD Operation: (Data)
 -----------------------------
 CRUD--> Create Read Update Delete.
 
-to add a new data to a table ---> INSERT INTO "tb name" (col details) VALUES (),(),();
+to add a new data to a table ---> INSERT INTO "tb name" (col details. * ---> all col without change in order) VALUES (),(),();
+to select data from a table ---> SELECT (clo details) FROM "tb name";
+to update a data --> UPDATE "tb name" SET col=value WHERE condition. (without condition, it will affect all the data.)
+Delete --> DELETE FROm tbname WHERE condition.
+
 
 Create --> INSERT
+Read ---> SELECT
+Update --> UPDATE
+Delete --> DELETE
