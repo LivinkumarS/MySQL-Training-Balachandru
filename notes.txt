@@ -83,8 +83,32 @@ Operators
 >= ---> Greater or equal
 <= ---> Lesser or equal
 
+BETWEEN ---> col1 BETWEEN start AND end;
+IN --> match against multiple value.  col1 IN (val1,val2,val3....)
 
+Pattern Matching (only in strings)
+----------------
+%---> 0 to any number of Characters.
+_ --> exactly one Character.
 
+--->'a%'
+--->'%a'
+--->'____'
+
+LIKE --> col1 LIKE 'pattern'
+
+Logical Operators
+------------------
+>> To combine two conditions.
+AND --> true--> when both conditions are true. false--> any one condition or both are false. condition1 AND condition2.
+OR -->  true--> when any one of two conditions is true. false--> both are false. condition1 AND condition2.
+NOT --> it just inverts the value. NOT condition.
+
+cond1   cond2
+true    true
+true    false
+false   true
+false   false
 
 
 Basic CRUD Operation: (Data)
@@ -94,10 +118,20 @@ CRUD--> Create Read Update Delete.
 to add a new data to a table ---> INSERT INTO "tb name" (col details. * ---> all col without change in order) VALUES (),(),();
 to select data from a table ---> SELECT (clo details) FROM "tb name";
 to update a data --> UPDATE "tb name" SET col=value WHERE condition. (without condition, it will affect all the data.)
-Delete --> DELETE FROm tbname WHERE condition.
+Delete --> DELETE FROM tbname WHERE condition. 
 
 
 Create --> INSERT
 Read ---> SELECT
 Update --> UPDATE
 Delete --> DELETE
+
+Filtering results
+------------------
+to filter a data ---> SELECT (col details) FROM "tb name" WHERE condition;
+
+Sorting data 
+-------------
+>>Arranging the result either in ascending order or descending order.
+
+---> ORDER BY col1 (ASC, DESC).
