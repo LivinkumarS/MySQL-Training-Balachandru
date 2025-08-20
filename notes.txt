@@ -135,3 +135,36 @@ Sorting data
 >>Arranging the result either in ascending order or descending order.
 
 ---> ORDER BY col1 (ASC, DESC).
+
+LIMIT---> used to limit the rows.
+OFFSET ---> skips the rows
+
+Functions in MySQL
+---------------------
+>> takes input, process it, return a value.
+
+Numeric Functions:
+------------------
+1)ROUND(x,y) --> rounds number to d decimal places. ex: ROUND(34.53344634565,5)--->34.23344
+2)CEIL(x) --> roundsup  number. ex: CEIL(34.0000006)--->35
+3)FLOOR(x)--> rounds down a number. ex:FLOOR(5.9999) ---> 5
+4)MOD(x,y) ---> reminder. 33/30--->1*30-->30-->33-30--->3
+                          44/3 --->14*3-->42 -->44-42-->2
+                          2/3  --->0*3-->0-->2-0-->2
+5)POW(n1,n2) ---> n1 power n2. pow(2,2) ---> 4
+
+String Functions 
+------------------
+1)CONCAT(str1,str2,str3.....) --> it will attach all these strings and return a single string.Ex: concat("Hello","Guys")--->"HelloGuys".
+2)LENGTH(str)--> return number of char.
+3)TRIM(str) --> removes excess space at beginning and ending.
+4)LOWER(str)
+5)UPPER(str)
+6)REPLACE(str, sub_str1, sub_str2). Ex: replace("Hello guys!", 'Hello', 'Hi') -->"Hi guys!"
+
+Date and Time 
+---------------
+CURDATE() --> date
+CURTIME() ---> time 
+NOW()--> date and time
+DATEDIFF(date1, date2)
