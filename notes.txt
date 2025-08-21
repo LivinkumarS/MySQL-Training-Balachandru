@@ -54,9 +54,37 @@ Boolean:
 Boolean ---> 1 or 0
 
 
-Constraint
+
+
+Constraints:
+------------
+>> Rules that enforces on table columns to ensure data integrity.
+
+Primary Key 
+------------
+>> column uniquely identifies each row. data that is entered in this field should be unique. It cannot have NULL value.
+
+Foreign Key 
 -----------
-primary key ---> It is just used to idetify each data uniquly
+>> estabishes relationship between two tables.
+>> values in foreign key column refers to primary key column inn another table.
+
+Auto-Increment
+----------------
+>> Automatically increases numeric values for each new row.
+>> Usually applied on primary keys.
+
+Unique 
+-------
+>> Ensures all values in a column are different.
+
+Not NULL
+---------
+>> It just ensures the column is not empty.
+
+Default
+--------
+>> Assigns default value, if NULL is provided.
 
 
 Queries:
@@ -168,3 +196,4 @@ CURDATE() --> date
 CURTIME() ---> time 
 NOW()--> date and time
 DATEDIFF(date1, date2)
+
