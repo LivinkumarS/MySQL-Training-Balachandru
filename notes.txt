@@ -197,3 +197,21 @@ CURTIME() ---> time
 NOW()--> date and time
 DATEDIFF(date1, date2)
 
+Joins
+------
+>> Used to fetch related data across multiple tables.
+
+Inner Join 
+----------
+>> Returns only matching rows.
+Ex: select col from table1 inner join table2 on expression;
+
+Left Join 
+---------
+>> Returns everything from left table and matches rows from right table.
+ex: select col from table1 left join table2 on expression;
+
+Right Join 
+---------
+>> Returns everything from right table and matches rows from right table.
+ex: select col from table1 right join table2 on expression;
