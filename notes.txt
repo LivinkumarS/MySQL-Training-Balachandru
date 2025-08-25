@@ -215,3 +215,26 @@ Right Join
 ---------
 >> Returns everything from right table and matches rows from right table.
 ex: select col from table1 right join table2 on expression;
+
+
+
+Aggregate Functions 
+-------------------
+Aggregate functions performs a calculation on a group of rows and return a single value.
+
+1) count--> count number of rows.
+2) sum --> adds up numeric values in a column
+3) avg --> find average value of a numeric column
+4) min --> find minumum vakue of a numeric column
+5) max --> find maximum value of a numeric column
+
+Group By 
+----------
+Groups rows into multiple categories based on a particular column, then aggregate functions are applied to each group.
+
+Having
+-------
+>> similar to where, but used after grouping.
+
+where---> filters rows.
+having ---> filters group
