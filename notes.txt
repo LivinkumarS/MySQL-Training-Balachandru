@@ -167,6 +167,23 @@ Sorting data
 LIMIT---> used to limit the rows.
 OFFSET ---> skips the rows
 
+
+
+Altering Table:
+----------------
+add column --> ALTER TABLE tbname ADD COLUMN col-details;
+modify a column --> ALTER TABLE tbname MODIFY COLUMN colname ......;
+renaming column --> ALTER TABLE tbname RENAME COLUMN colname TO newName;
+adding foreig key -->  ALTER TABLE STUDENTS ADD CONSTRAINT fk_name foreign key details...;
+to drop a col ---> ALTER TABLE tbname DROP COLUMN colname;
+
+Dropping Table and DB 
+----------------------
+DROP TABLE tbname;
+DROP DATABASE dbname;
+
+
+
 Functions in MySQL
 ---------------------
 >> takes input, process it, return a value.
@@ -238,3 +255,20 @@ Having
 
 where---> filters rows.
 having ---> filters group
+
+Sub queries
+------------
+>> A query inside another Query.
+>> Used when one query depends on the result of another query.
+
+
+Single-Row Subquery
+-------------------
+here sub query returns only one row.
+ex: select * from product_list where price>(select avg(price) from product_list);
+
+Multi-row sub query 
+--------------------
+here sub query returns only one row.
+ex: select * from product_list where id in (select productId from order_details where userId=2);
+
